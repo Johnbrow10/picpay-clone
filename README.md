@@ -4,8 +4,7 @@ Este é o repositório com o código fonte desenvolvido durante as aulas dispon�
 
 Aulas ministradas pelo Mateus Silva
 ```
-  https://github.com/maateusilva
-
+  Github do Autor: https://github.com/maateusilva
 ```
 
 Este projeto utiliza o [Expo](https://expo.io/).

@@ -2,9 +2,9 @@
 
 Este é o repositório com o código fonte desenvolvido durante as aulas disponíveis no [YouTube](https://youtu.be/0CraBZHejKI) onde criamos um clone do aplicativo PicPay utilizando React Native, Styled Components e React Navigation 5.
 
-Aulas ministradas pelo Mateus Silva
+Aulas ministradas pelo Mateus Silva,Github:
 ```
-  Github do Autor: https://github.com/maateusilva
+  https://github.com/maateusilva
 ```
 
 Este projeto utiliza o [Expo](https://expo.io/).

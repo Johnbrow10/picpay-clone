@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.ScrollView.attrs(() => ({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
-  contenContainer: {
+  contentContainerStyle: {
     alignItems: "center",
     paddingLeft: 16,
   },
@@ -15,7 +15,6 @@ export const Container = styled.ScrollView.attrs(() => ({
 export const Option = styled.TouchableOpacity`
   width: 100px;
   align-items: center;
-  margin-top: 20px;
 `;
 
 export const Img = styled.Image``;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Feather,
   MaterialCommunityIcons,
@@ -35,12 +35,20 @@ import {
   AddLabel,
   UseTicketContainer,
   UseTicketButton,
-  UseTicketLabel
+  UseTicketLabel,
 } from "./styles";
 
 import creditCard from "../../images/credit-card.png";
 
 export default function Wallet() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  function handleToggleVisibility() {
+    // usar a arrow Function para trocar o
+    // estado inves de usar a variavel de controle do state
+    setIsVisible((prevState) => !prevState);
+  }
+
   return (
     <Wrapper>
       <Header colors={["#52E78C", "#1AB563"]}>
@@ -49,11 +57,15 @@ export default function Wallet() {
 
           <BalanceContainer>
             <Value>
-              R$ <Bold>0,00</Bold>
+              R$ <Bold>{isVisible ? "0,00" : "----"}</Bold>
             </Value>
 
-            <EyeButton>
-              <Feather name="eye" size={28} color="#fff" />
+            <EyeButton onPress={handleToggleVisibility}>
+              <Feather
+                name={isVisible ? "eye" : "eye-off"}
+                size={28}
+                color="#fff"
+              />
             </EyeButton>
           </BalanceContainer>
 

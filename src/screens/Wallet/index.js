@@ -1,5 +1,12 @@
 import React from "react";
-import { Feather, MaterialCommunityIcons, FontAwesome } from "@expo/vector-icons";
+import {
+  Feather,
+  MaterialCommunityIcons,
+  FontAwesome,
+} from "@expo/vector-icons";
+
+import { Switch } from "react-native";
+
 import {
   Wrapper,
   Header,
@@ -13,6 +20,8 @@ import {
   Actions,
   Action,
   ActionLabel,
+  UseBalance,
+  UseBalanceTitle,
 } from "./styles";
 
 export default function Wallet() {
@@ -36,7 +45,7 @@ export default function Wallet() {
 
           <Actions>
             <Action>
-              <MaterialCommunityIcons name="cash" size={20} color="#fff" />
+              <MaterialCommunityIcons name="cash" size={28} color="#fff" />
               <ActionLabel>Adicionar</ActionLabel>
             </Action>
             <Action>
@@ -46,6 +55,12 @@ export default function Wallet() {
           </Actions>
         </HeaderContainer>
       </Header>
+
+      <UseBalance>
+        <UseBalanceTitle>usar saldo ao Pagar</UseBalanceTitle>
+
+        <Switch />
+      </UseBalance>
     </Wrapper>
   );
 }

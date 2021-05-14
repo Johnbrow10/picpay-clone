@@ -58,9 +58,29 @@ export const Action = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  width: 125px;
+  width: 150px;
   height: 45px;
   border-radius: 25px;
+  margin: 0 10px;
 `;
 
-export const ActionLabel = styled.Text``;
+export const ActionLabel = styled.Text`
+  font-size: 16px;
+  color: #fff;
+  margin-left: 10px;
+`;
+
+export const UseBalance = styled.View`
+  background: #1c1c1e;
+  height: 60px;
+  flex-direction: row;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const UseBalanceTitle = styled.Text`
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+`;
